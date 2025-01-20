@@ -57,5 +57,14 @@ namespace DataGridView
             }
             catch { }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+            comboBox1.Text = "";
+            label5.Text = label6.Text = "";
+            numericUpDown1.Value = 0;
+        }
     }
 }
